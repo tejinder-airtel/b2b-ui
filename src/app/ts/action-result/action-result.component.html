@@ -1,0 +1,79 @@
+<tbs-navbar></tbs-navbar>
+  <div class="content-wrapper">
+    <section>
+      <div class="common-wrapper-l">
+        <h2 class="headding-m text-center">Action Results based on your search </h2>
+        <div class="inner">
+          <div class="acc-view-wrap">
+            <h2 class="heading">Utilization Report</h2>
+            <div class="content">
+              <div class="set">
+                <p>1- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                <p>2- has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+                <p>3- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+              </div>
+              <p class="color-red">The link is highly utilized</p>
+            </div>
+            <h2 class="heading">BJT Findings</h2>
+            <div class="content">
+              <div class="set">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+              </div>
+            </div>
+            <h2 class="heading">Commands</h2>
+            <div class="content">
+              <div class="command set"> Router1#debug&nbsp;ip&nbsp;packet&nbsp;detail<br>
+                IP&nbsp;packet&nbsp;debugging&nbsp;is&nbsp;on&nbsp;(detailed)<br>
+                <br>
+                Router1#ping&nbsp;34.0.0.4&nbsp;<br>
+                Type&nbsp;escape&nbsp;sequence&nbsp;to&nbsp;abort.&nbsp;<br>
+                Sending&nbsp;5,&nbsp;100-byte&nbsp;ICMP&nbsp;Echos&nbsp;to&nbsp;34.0.0.4,&nbsp;timeout&nbsp;is&nbsp;2&nbsp;seconds:&nbsp;<br>
+                U.U.U&nbsp;<br>
+                Success&nbsp;rate&nbsp;is&nbsp;0&nbsp;percent&nbsp;(0/5)&nbsp;<br>
+                <br>
+                Jan&nbsp;20&nbsp;16:05:30.659:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(local),&nbsp;d=34.0.0.4&nbsp;(Serial0),&nbsp;len&nbsp;100,&nbsp;<br>
+                &nbsp;&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:05:30.663:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:05:30.691:&nbsp;IP:&nbsp;s=12.0.0.2&nbsp;(Serial0),&nbsp;d=12.0.0.1&nbsp;(Serial0),&nbsp;len&nbsp;56,&nbsp;<br>
+                &nbsp;&nbsp;rcvd&nbsp;3<br>
+                Jan&nbsp;20&nbsp;16:05:30.695:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=3,&nbsp;code=1<br>
+                Jan&nbsp;20&nbsp;16:05:30.699:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(local),&nbsp;d=34.0.0.4&nbsp;(Serial0),&nbsp;len&nbsp;100,&nbsp;<br>
+                &nbsp;&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:05:30.703:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:05:32.699:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(local),&nbsp;d=34.0.0.4&nbsp;(Serial0),&nbsp;len&nbsp;100,&nbsp;<br>
+                &nbsp;&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:05:32.703:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:05:32.731:&nbsp;IP:&nbsp;s=12.0.0.2&nbsp;(Serial0),&nbsp;d=12.0.0.1&nbsp;(Serial0),&nbsp;len&nbsp;56,&nbsp;<br>
+                &nbsp;&nbsp;rcvd&nbsp;3<br>
+                Jan&nbsp;20&nbsp;16:05:32.735:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=3,&nbsp;code=1<br>
+                Jan&nbsp;20&nbsp;16:05:32.739:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(local),&nbsp;d=34.0.0.4&nbsp;(Serial0),&nbsp;len&nbsp;100,&nbsp;<br>
+                &nbsp;&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:05:32.743:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Now&nbsp;let&nbsp;us&nbsp;examine&nbsp;what&nbsp;is&nbsp;wrong&nbsp;on&nbsp;Router2:<br>
+                Router2#debug&nbsp;ip&nbsp;packet&nbsp;detail<br>
+                IP&nbsp;packet&nbsp;debugging&nbsp;is&nbsp;on&nbsp;(detailed)<br>
+                <br>
+                Router2#&nbsp;<br>
+                Jan&nbsp;20&nbsp;16:10:41.907:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(Serial1),&nbsp;d=34.0.0.4,&nbsp;len&nbsp;100,&nbsp;unroutable<br>
+                Jan&nbsp;20&nbsp;16:10:41.911:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:10:41.915:&nbsp;IP:&nbsp;s=12.0.0.2&nbsp;(local),&nbsp;d=12.0.0.1&nbsp;(Serial1),&nbsp;len&nbsp;56,&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:10:41.919:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=3,&nbsp;code=1<br>
+                Jan&nbsp;20&nbsp;16:10:41.947:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(Serial1),&nbsp;d=34.0.0.4,&nbsp;len&nbsp;100,&nbsp;unroutable<br>
+                Jan&nbsp;20&nbsp;16:10:41.951:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:10:43.943:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(Serial1),&nbsp;d=34.0.0.4,&nbsp;len&nbsp;100,&nbsp;unroutable<br>
+                Jan&nbsp;20&nbsp;16:10:43.947:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:10:43.951:&nbsp;IP:&nbsp;s=12.0.0.2&nbsp;(local),&nbsp;d=12.0.0.1&nbsp;(Serial1),&nbsp;len&nbsp;56,&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:10:43.955:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=3,&nbsp;code=1<br>
+                Jan&nbsp;20&nbsp;16:10:43.983:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(Serial1),&nbsp;d=34.0.0.4,&nbsp;len&nbsp;100,&nbsp;unroutable<br>
+                Jan&nbsp;20&nbsp;16:10:43.987:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:10:45.979:&nbsp;IP:&nbsp;s=12.0.0.1&nbsp;(Serial1),&nbsp;d=34.0.0.4,&nbsp;len&nbsp;100,&nbsp;unroutable<br>
+                Jan&nbsp;20&nbsp;16:10:45.983:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=8,&nbsp;code=0<br>
+                Jan&nbsp;20&nbsp;16:10:45.987:&nbsp;IP:&nbsp;s=12.0.0.2&nbsp;(local),&nbsp;d=12.0.0.1&nbsp;(Serial1),&nbsp;len&nbsp;56,&nbsp;sending<br>
+                Jan&nbsp;20&nbsp;16:10:45.991:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICMP&nbsp;type=3,&nbsp;code=1&nbsp; </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ 

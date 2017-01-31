@@ -1,0 +1,114 @@
+<tbs-navbar></tbs-navbar>
+  <div class="content-wrapper">
+    <section>
+      <div class="common-wrapper-l search-for">
+        <div class="btn-top stick-right">
+          <button type="submit" class="btn no-radius text-transform-none"><img src="../../images/icon-expand.png" /> Redirect to Singtel</button>
+        </div>
+        <h2 class="headding-m text-center">Search For Troubleshooting</h2>
+        <div class="inner">
+          <div class="normal-search">
+            <div class="form-wrapper width-100p20">
+              <form>
+                <div class="grid">
+                  <ul class="row">
+                    <li class="col-4">
+                      <div class="field">
+                        <div class="ff-wrapper">
+                          <label>Select Action</label>
+                          <div class="select-dropdown">
+                        <div class="caret">
+                        <select class="select-list" name="form_select">
+                          <option value="0" selected="selected">Run Tests</option>
+                          <option value="1">Run Tests</option>
+                          <option value="2">Run Tests</option>
+                        </select>
+                        <!--<label class="anim">Department</label>-->
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="col-8">
+                      <div class="field">
+                        <div class="ff-wrapper">
+                          <label>Search Keywords</label>
+                          <input type="text" placeholder="Search Curcuits by Customer name, Circuit ID, VRF Name, Location" />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="adv-search">
+            <div class="acc-wrap">
+              <h2 class="acc-head active">Advanced Search</h2>
+              <div class="acc-content">
+                <div class="form-wrapper">
+                  <form action="" method="post">
+                    <div class="grid">
+                      <ul class="row">
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">Customer Name</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">Location</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">Bandwidth</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">RE Router</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">VRF Name</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="col-4">
+                          <div class="field">
+                            <div class="ff-wrapper">
+                              <input type="text" placeholder="" />
+                              <label class="anim">Service</label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="action">
+             <a [routerLink]="['/circuitDetails']"><button type="submit" class="btn btn-blue no-radius">Search</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

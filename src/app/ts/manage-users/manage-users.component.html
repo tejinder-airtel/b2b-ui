@@ -1,0 +1,139 @@
+<tbs-navbar></tbs-navbar>
+  <div class="content-wrapper">
+    <section>
+      <div class="common-wrapper-l">
+      	<div class="search-area">
+        	<table>
+            	<tr>
+                	<td>Search & Update Existing Users</td>
+                    <td><input type="text" placeholder="Search" ></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-fixed-header-wrap">
+          <div class="table-fixed-header">
+            <div class="t-head">
+              <div class="gapfiller"></div>
+              <div class="gapfiller2"></div>
+              <table>
+                <thead>
+                  <tr>
+                    <th><div class="t-cell">Status</div></th>
+                    <th><div class="t-cell">Email ID</div></th>
+                    <th><div class="t-cell">First name</div></th>
+                    <th><div class="t-cell">Last Name</div></th>
+                    <th><div class="t-cell">Company</div></th>
+                    <th><div class="t-cell">Designation</div></th>
+                    <th><div class="t-cell">Phone</div></th>
+                    <th><div class="t-cell">Edit</div></th>
+                    <th><div class="t-cell">Delete</div></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="t-content">
+              <table>
+                <tbody>
+                
+                  <tr>
+                    <td width="100"><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="link" href="#">Pending Approval</a></td>
+                    <td>abc@xyc.com</td>
+                    <td>Bharat</td>
+                    <td>Sharma</td>
+                    <td>Bharti Airtel</td>
+                    <td>Assistant Manager</td>
+                    <td>9990999012</td>
+                    <td><a href="#" class="link-edit"><img src="../../images/icon-edit.png" alt="edit" /></a></td>
+                    <td><a href="#" class="link-delete"><img src="../../images/icon-del.png" alt="delete" /></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ 
+<script>
+//alert(getScrollBarWidth())
+$(document).ready(function(){
+	$(".table-fixed-header-wrap .table-fixed-header .t-content table tr td").each(function(i){
+		tableFixHeader(this, i);
+		})
+	$(window).resize(function(){
+		setTimeout(function(){
+			$(".table-fixed-header-wrap .table-fixed-header .t-content table tr td").each(function(i){
+				tableFixHeader(this, i);
+				})
+			},100)
+		})
+	})
+</script>
+

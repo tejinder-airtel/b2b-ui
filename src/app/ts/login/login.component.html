@@ -1,0 +1,26 @@
+<div class="content-wrapper">
+    <section>
+      <div class="login-wrapper">
+        <h2 class="headding-m uppercase text-center"><strong>Login</strong></h2>
+        <div class="common-wrapper">
+          <div class="profile-pic"><i class="icon-profile-circle"></i></div>
+          <div class="form-wrapper">
+            <form action="" method="post">
+              <div class="field">
+                <div class="ff-wrapper"> <span class="input-user">
+                  <input type="text" Placeholder="User Name" />
+                  </span> </div>
+                <div class="ff-wrapper"> <span class="input-key">
+                  <input type="password" placeholder="Password" />
+                  </span> <a href="#" class="forgot">Forgot Password ?</a> </div>
+                <div class="action text-center">
+                  <a [routerLink]="['/dashboard']"><button type="submit"  class="btn-primary">Login</button></a>
+                </div>
+                <div class="action text-center"><a [routerLink]="['/signup']" class="btn-textlink">SignUp</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

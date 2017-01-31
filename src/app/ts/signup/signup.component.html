@@ -1,0 +1,84 @@
+  <div class="content-wrapper">
+
+    <section>
+      <div class="register-wrapper">
+        <h2 class="headding-m uppercase text-center"><strong>Register</strong></h2>
+        <div class="common-wrapper">
+          <div class="form-wrapper">
+            <form (ngSubmit)="formSubmit(form)" #form="ngForm"> 
+              <div class="field">
+                <div class="ff-wrapper">
+                  <input type="text" [(ngModel)]="signUpDetails.email" name="emailId"
+                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                  required />
+                  <label class="anim">Email ID</label>
+                </div>
+                <ul class="half-wrapper">
+                  <li class="fl">
+                    <div class="ff-wrapper">
+                      <input type="text" [(ngModel)]="signUpDetails.firstName" name="firstName" />
+                      <label class="anim">First Name</label>
+                    </div>
+                  </li>
+                  <li class="fr">
+                    <div class="ff-wrapper">
+                      <input type="text" [(ngModel)]="signUpDetails.lastName" name="lastName"  />
+                      <label class="anim">Last Name</label>
+                    </div>
+                  </li>
+                  <li class="fl">
+                    <div class="ff-wrapper">
+                      <input type="password" [(ngModel)]="signUpDetails.password" name="password" />
+                      <label class="anim">Password</label>
+                    </div>
+                  </li>
+                  <li class="fr">
+                    <div class="ff-wrapper">
+                      <input type="password" [(ngModel)]="signUpDetails.confirmPassword" name="confirmPassword" />
+                      <label class="anim">Confirm Password</label>
+                    </div>
+                  </li>
+                  <li class="fl">
+                    <div class="ff-wrapper">
+                      <input type="text" [(ngModel)]="signUpDetails.company" name="company" />
+                      <label class="anim">Company</label>
+                    </div>
+                  </li>
+                  <li class="fr">
+                    <div class="ff-wrapper">
+                      <div class="select-dropdown">
+                        <div class="caret">
+                        <select class="select-list" name="form_select"   >
+                          <option value="0" selected="selected"></option>
+                          <option value="1">IT Department</option>
+                          <option value="2">Other</option>
+                        </select>
+                        <label class="anim">Department</label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="fl">
+                    <div class="ff-wrapper">
+                      <input type="text" [(ngModel)]="signUpDetails.designation" name="designation" />
+                      <label class="anim">Designation</label>
+                    </div>
+                  </li>
+                  <li class="fr">
+                    <div class="ff-wrapper">
+                      <input type="text" maxlength="10"  [(ngModel)]="signUpDetails.mobile" name="mobile" />
+                      <label class="anim">Mobile Number</label>
+                    </div>
+                  </li>
+                </ul>
+                <div class="action text-right">
+                  <button type="submit" class="btn-primary">SignUp</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  

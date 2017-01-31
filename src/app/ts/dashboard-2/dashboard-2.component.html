@@ -1,0 +1,124 @@
+<tbs-navbar></tbs-navbar>
+  <div class="content-wrapper">
+    <section>
+      <div class="common-wrapper-l search-for">
+        <div class="btn-top stick-right">
+          <button type="submit" class="btn no-radius text-transform-none"><img src="../../images/icon-expand.png" /> Redirect to Singtel</button>
+        </div>
+        <h2 class="headding-m text-center">Search For Troubleshooting</h2>
+        <div class="inner">
+          <div class="normal-search">
+            <div class="form-wrapper">
+              <form>
+                <div class="grid">
+                  <ul class="row">
+                    <li class="col-3">
+                      <div class="field">
+                        <div class="ff-wrapper">
+                          <label>Select Action</label>
+                          <div class="select-dropdown">
+                        <div class="caret">
+                        <select class="select-list" name="form_select">
+                          <option value="0" selected="selected">Run Tests</option>
+                          <option value="1">Run Tests</option>
+                          <option value="2">Run Tests</option>
+                        </select>
+                        <!--<label class="anim">Department</label>-->
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="col-3">
+                      <div class="field">
+                        <div class="ff-wrapper">
+                          <label>Select Action</label>
+                          <div class="select-dropdown">
+                        <div class="caret">
+                        <select class="select-list" name="form_select">
+                          <option value="0" selected="selected">Circuit ID</option>
+                          <option value="1">Circuit ID</option>
+                          <option value="2">Circuit ID</option>
+                        </select>
+                        <!--<label class="anim">Department</label>-->
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="col-6">
+                      <div class="field">
+                        <div class="ff-wrapper">
+                          <label>Search Keywords</label>
+                          <input type="text" placeholder="Enter Circuit ID" />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="adv-search">
+          	<h4 class="heading-n margin-top-20">Select tests to be performed</h4>
+            <div class="grid margin-top-20">
+              <ul class="row">
+                <li class="col-3">
+                  <label for="cb-01" class="gray-cb-wrap">
+                    <input id="cb-01" value="1" class="checkbox" type="checkbox">
+                    <label for="cb-01" class="checkbox-label"></label>
+                    <span class="cb-label">Link Status / Ping</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-02" class="gray-cb-wrap">
+                    <input id="cb-02" value="2" class="checkbox" type="checkbox">
+                    <label for="cb-02" class="checkbox-label"></label>
+                    <span class="cb-label">Check Utilization</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-03" class="gray-cb-wrap">
+                    <input id="cb-03" value="3" class="checkbox" type="checkbox">
+                    <label for="cb-03" class="checkbox-label"></label>
+                    <span class="cb-label">Check PE BGP</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-04" class="gray-cb-wrap">
+                    <input id="cb-04" value="4" class="checkbox" type="checkbox">
+                    <label for="cb-04" class="checkbox-label"></label>
+                    <span class="cb-label">Check PE Interface Log</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-05" class="gray-cb-wrap">
+                    <input id="cb-05" value="5" class="checkbox" type="checkbox">
+                    <label for="cb-05" class="checkbox-label"></label>
+                    <span class="cb-label">Check PE Prefix Limit</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-06" class="gray-cb-wrap">
+                    <input id="cb-06" value="6" class="checkbox" type="checkbox">
+                    <label for="cb-06" class="checkbox-label"></label>
+                    <span class="cb-label">BGP Received Routes</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-07" class="gray-cb-wrap">
+                    <input id="cb-07" value="7" class="checkbox" type="checkbox">
+                    <label for="cb-07" class="checkbox-label"></label>
+                    <span class="cb-label">BGP Advertised Routes</span> </label>
+                </li>
+                <li class="col-3">
+                  <label for="cb-08" class="gray-cb-wrap">
+                    <input id="cb-08" value="8" class="checkbox" type="checkbox">
+                    <label for="cb-08" class="checkbox-label"></label>
+                    <span class="cb-label">Check PE OSPF</span> </label>
+                </li>
+              </ul>
+              <div class="action text-right margin-right-10 padding-top-10">
+                <a [routerLink]="['/actionResult']"><button type="submit" class="btn btn-blue no-radius">Submit</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+

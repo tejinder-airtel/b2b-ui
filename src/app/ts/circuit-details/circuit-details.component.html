@@ -1,0 +1,147 @@
+<tbs-navbar></tbs-navbar>
+  <div class="content-wrapper">
+    <section>
+      <div class="common-wrapper-l">
+        <div class="link-top stick-right"> <a href="#" class="link-export"><img src="../../images/icon-export.png" /><span>Export to Excel</span></a> </div>
+        <h2 class="headding-m color-dark-gray text-center">Circuit Details</h2>
+        <ul class="pagination">
+          <li><a href="#"> <i class="icon-down-arrow"></i> </a></li>
+          <li><a href="#">1</a></li>
+          <li><a class="active" href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">11</a></li>
+          <li><a href="#">12</a></li>
+          <li><a href="#">13</a></li>
+          <li><a href="#">14</a></li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">30</a></li>
+          <li><a href="#"> <i class="icon-down-arrow"></i> </a></li>
+        </ul>
+        <div class="table-fixed-header-wrap">
+          <div class="table-fixed-header">
+            <div class="t-head">
+              <div class="gapfiller"></div>
+              <div class="gapfiller2"></div>
+              <table>
+                <thead>
+                  <tr>
+                    <th><div class="t-cell">PE Name</div></th>
+                    <th><div class="t-cell">Circuit ID</div></th>
+                    <th><div class="t-cell">VRF Name</div></th>
+                    <th><div class="t-cell">Interface</div></th>
+                    <th><div class="t-cell">Service Type</div></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="t-content">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                  <tr>
+                    <td>MX-AM-09</td>
+                    <td>EVFN0000123009775NG</td>
+                    <td>LAPPS-0000022066</td>
+                    <td>ge-7/2/2,903</td>
+                    <td>VPLS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn-wrap text-right">
+             <a [routerLink]="['/dashboard2']"><button class="btn btn-blue no-radius text-transform-none">Return Input</button></a>
+        </div>
+      </div>
+    </section>
+  </div>
+<script>
+//alert(getScrollBarWidth())
+$(document).ready(function(){
+	$(".table-fixed-header-wrap .table-fixed-header .t-content table tr td").each(function(i){
+		var total = $(this).closest(".table-fixed-header").find('.t-head th').length - 1;
+		tableFixHeader(this, i, total);
+		})
+	$(window).resize(function(){
+		setTimeout(function(){
+			$(".table-fixed-header-wrap .table-fixed-header .t-content table tr td").each(function(i){
+				var total = $(this).closest(".table-fixed-header").find('.t-head th').length - 1;
+				tableFixHeader(this, i, total);
+				})
+			},100)
+		})
+	})
+</script>
+
